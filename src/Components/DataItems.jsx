@@ -6,7 +6,7 @@ export const items = [
     type: 'food',
     name: 'Twins Burger',
     desc: 'description',
-    price: 12.5,
+    price: 12.50,
     img: twins
   },
   {
@@ -14,7 +14,7 @@ export const items = [
     type: 'food',
     name: 'Classic Burger',
     desc: 'description',
-    price: 7.5,
+    price: 7.50,
     img: 'https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg'
   },
   {
@@ -22,7 +22,7 @@ export const items = [
     type: 'food',
     name: 'Chili Burger',
     desc: 'description',
-    price: 8.5,
+    price: 8.50,
     img: 'https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg'
   },
   {
@@ -30,7 +30,7 @@ export const items = [
     type: 'food',
     name: 'Bros Burger',
     desc: 'description',
-    price: 10.5,
+    price: 10.50,
     img: 'https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg'
   },
   {
@@ -38,7 +38,7 @@ export const items = [
     type: 'drinks',
     name: 'Coca Cola',
     desc: 'description',
-    price: 2.5,
+    price: 2.50,
     img: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Coca-Cola_Local_Brand_Cambodia.jpg'
   },
   {
@@ -46,7 +46,7 @@ export const items = [
     type: 'drinks',
     name: 'Fanta',
     desc: 'description',
-    price:2.5,
+    price:2.50,
     img: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Coca-Cola_Local_Brand_Cambodia.jpg'
   },
   {
@@ -54,7 +54,7 @@ export const items = [
     type: 'drinks',
     name: 'Sprite',
     desc: 'description',
-    price:2.5,
+    price:2.50,
     img: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Coca-Cola_Local_Brand_Cambodia.jpg'
   },
   {
@@ -62,7 +62,7 @@ export const items = [
     type: 'drinks',
     name: 'Mezzo Mix',
     desc: 'description',
-    price: 2.5,
+    price: 2.50,
     img: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Coca-Cola_Local_Brand_Cambodia.jpg'
   },
   {
@@ -70,7 +70,7 @@ export const items = [
     type: 'food',
     name: 'Special burger',
     desc: 'description',
-    price: 15.5,
+    price: 15.50,
     img: twins
   },
 ]

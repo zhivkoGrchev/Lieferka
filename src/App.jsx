@@ -3,13 +3,11 @@ import Menu from './Components/Menu.jsx'
 import City from './Components/City.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import Cart from './Components/Cart.jsx'
-import { ShopContextProvider } from './Context/ShopContext.jsx'
 
 const App = () => {
   return (
     <>
       <div className='bg-slate-200 pt-20'>
-        <ShopContextProvider>
           <Routes>
 
             <Route path='/' element={
@@ -31,7 +29,6 @@ const App = () => {
             <Route path='*' element={<NotFound />} />
             
           </Routes>
-        </ShopContextProvider>
       </div>
     </>
   )
