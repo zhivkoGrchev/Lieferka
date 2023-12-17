@@ -3,12 +3,16 @@ import { ShopContext } from '../Context/ShopContext.jsx'
 import { useContext } from 'react'
 import CartItem from './CartItem.jsx'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 const Cart = () => {
   const {cartItems, getTotalCartAmount} = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  console.log(cartItems);
 
   return (
     <div>
@@ -49,9 +53,12 @@ const Cart = () => {
           onClick={() => navigate('/burgerbros')}
           className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2'
           >Continue Shopping</button>
+        <Link to='/checkout'>
         <button
           className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2'
-        >Checkout</button>
+        >Go to Checkout page
+        </button>
+        </Link>
         </div>
 
       </div>

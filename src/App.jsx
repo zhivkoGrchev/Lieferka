@@ -3,6 +3,8 @@ import Menu from './Components/Menu.jsx'
 import City from './Components/City.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import Cart from './Components/Cart.jsx'
+import Checkout from './Components/Checkout.jsx'
+
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
             }/>
 
             <Route path='cart' element={<Cart />} />
+
+            <Route path='checkout' element={<Checkout />} />
 
             <Route path='*' element={<NotFound />} />
             

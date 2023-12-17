@@ -6,6 +6,7 @@ import { TiThMenu } from "react-icons/ti";
 import PropTypes from 'prop-types'
 import { ShopContext } from '../Context/ShopContext.jsx'
 import { useContext } from 'react'
+import imgLogo from '../Assets/neonLogo.png'
 
 const Nav = () => {
 
@@ -44,6 +45,7 @@ const Nav = () => {
       <div className='h-10vh flex justify-between z-50 text-white lg:py-5 px-10 py-4'>
 
           <div className='flex items-center flex-1'>
+          <img src={imgLogo} className='h-10 pr-2'/>
             <Link to='/'>
             <span className='text-2xl font-bold'>Lieferka</span>&nbsp;
             </Link>
