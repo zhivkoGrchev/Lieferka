@@ -6,12 +6,12 @@ import { TiThMenu } from "react-icons/ti";
 import PropTypes from 'prop-types'
 import { ShopContext } from '../Context/ShopContext.jsx'
 import { useContext } from 'react'
-import imgLogo from '../Assets/neonLogo.png'
+import imgLogo from '../Assets/logo_lieferka.png'
 
 const Nav = () => {
 
-  const {getTotalCartAmount} = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
+  const {getTotalCartItems} = useContext(ShopContext);
+  const totalItems = getTotalCartItems();
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -23,16 +23,13 @@ const Nav = () => {
         <Link to='/' onClick={handleClick}>
           <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Home</li>
         </Link>
-        <Link to='About' onClick={handleClick}>
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>About</li>
-        </Link>
         <Link to='Services' onClick={handleClick}>
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Services</li>
+          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Add your restaurant</li>
         </Link>
         <Link to='Projects' onClick={handleClick}>
-          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Projects</li>
+          <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Sign up to deliver</li>
         </Link>
-        <Link to='Contact' onClick={handleClick}>
+        <Link to='contact' onClick={handleClick}>
           <li className='my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded'>Contact</li>
         </Link>
       </ul>
@@ -45,30 +42,27 @@ const Nav = () => {
       <div className='h-10vh flex justify-between z-50 text-white lg:py-5 px-10 py-4'>
 
           <div className='flex items-center flex-1'>
-          <img src={imgLogo} className='h-10 pr-2'/>
+          <img src={imgLogo} className='h-4 pr-1.5 mt-0.5'/>
             <Link to='/'>
             <span className='text-2xl font-bold'>Lieferka</span>&nbsp;
             </Link>
-            <span className='text-xs'>beta v1.1</span>
+            <span className='text-xs text-teal-400'>beta v1.12</span>
           </div>
 
           <div className='lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden'>
             <div className='flex-10'>
               <ul className='flex gap-8 mr-16 text-[18px]'>
                 <Link to='/'>
-                  <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Home</li>
-                </Link>
-                <Link to='About'>
-                  <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>About</li>
+                  <li className='hover:text-teal-400 transition border-b-2 border-slate-900 cursor-pointer'>Home</li>
                 </Link>
                 <Link to='Services'>
-                  <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Services</li>
+                  <li className='hover:text-teal-400 transition border-b-2 border-slate-900 cursor-pointer'>Add your restaurant</li>
                 </Link>
                 <Link to='Projects'>
-                  <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Projects</li>
+                  <li className='hover:text-teal-400 transition border-b-2 border-slate-900 cursor-pointer'>Sign up to deliver</li>
                 </Link>
-                <Link to='Contact'>
-                  <li className='hover:text-fuchsia-600 transition border-b-2 border-slate-900 hover:border-fuchsia-600 cursor-pointer'>Contact</li>
+                <Link to='contact'>
+                  <li className='hover:text-teal-400 transition border-b-2 border-slate-900 cursor-pointer'>Contact</li>
                 </Link>
               </ul>
             </div>
@@ -79,9 +73,9 @@ const Nav = () => {
           </div>
           
           <Link to='cart'>
-          <button className='flex bg-slate-100 pt-2 pb-1 px-2 rounded-lg'>
+          <button className='flex bg-slate-100 pt-2 pb-1 px-2 rounded-lg hover:bg-teal-400'>
             <FaShoppingCart className='text-xl text-slate-900'/>
-            <p className='text-xs pl-2 text-slate-900 font-extrabold'>${totalAmount}</p>
+            <p className='text-xs pl-2 text-slate-900 font-extrabold'>{totalItems}</p>
           </button>
           </Link>
 

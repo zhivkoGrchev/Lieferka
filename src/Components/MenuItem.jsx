@@ -16,7 +16,7 @@ const MenuItem = ({id, name, desc, price, img}) => {
         <p className='text-xs'>{desc}</p>
         <div>
           <p className='text-sm font-medium py-2'>${price}</p>
-          <button onClick={() => addToCart(id)} className='rounded drop-shadow-lg bg-slate-700 text-slate-200 text-sm px-2 py-1 font-medium' type='button'>
+          <button onClick={() => addToCart(id)} className='rounded drop-shadow-lg bg-slate-700 text-slate-200 text-sm px-2 py-1 font-medium hover:bg-teal-400 hover:text-slate-900' type='button'>
             Add to Basket {cartItemAmount > 0 && <>({cartItemAmount})</>}
           </button>
         </div>

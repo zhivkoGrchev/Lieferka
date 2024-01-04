@@ -51,11 +51,11 @@ const Cart = () => {
         <div className='flex justify-between'>
         <button 
           onClick={() => navigate('/burgerbros')}
-          className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2'
+          className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2 hover:bg-teal-400 hover:text-slate-900'
           >Continue Shopping</button>
         <Link to='/checkout'>
         <button
-          className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2'
+          className='bg-slate-700 text-slate-100 font-normal rounded-md p-2 my-2 hover:bg-teal-400 hover:text-slate-900'
         >Go to Checkout page
         </button>
         </Link>

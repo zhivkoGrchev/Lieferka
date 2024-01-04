@@ -20,7 +20,7 @@ const GastroItem = ({name, desc, img,}) => {
         <h3 className='text-l font-bold pt-2'>{name}</h3>
         <p className='text-xs pb-4'>{desc}</p>
         <div>
-          <button onClick={()=>burgerBros()} className='rounded drop-shadow-lg bg-slate-700 text-slate-200 text-sm px-2 py-1 font-medium' type='button'>
+          <button onClick={()=>burgerBros()} className='rounded drop-shadow-lg bg-slate-700 text-slate-200 text-sm px-2 py-1 font-medium hover:bg-teal-400 hover:text-slate-900' type='button'>
             Open Menu
           </button>
         </div>
