@@ -8,8 +8,12 @@ const GastroItem = ({name, desc, img,}) => {
   const burgerBros = () => {
     if (name === 'Burger Bros') {
     navigate('/burgerbros');
-    } else if (name === 'Burger Kire') {
-      navigate('/burgerkire');
+    } else if (name === 'Gasthof Bros') {
+      navigate('/gasthofbros');
+    } else if (name === 'Döner Bros') {
+      navigate('/dönerbros');
+    } else if (name === 'Pizza Bros') {
+      navigate('/pizzabros');
     }
   }
   

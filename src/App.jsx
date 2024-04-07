@@ -20,10 +20,31 @@ const App = () => {
               />
             }/>
 
+            <Route path='gasthofbros' element={
+              <Menu 
+                nameGastro='Gasthof Bros'
+                sloganGastro='The best place in town'
+              />
+            }/>
+
             <Route path='burgerbros' element={
               <Menu 
                 nameGastro='Burger Bros'
                 sloganGastro='The best burgers in town'
+              />
+            }/>
+
+            <Route path='dönerbros' element={
+              <Menu 
+                nameGastro='Döner Bros'
+                sloganGastro='The best döner in town'
+              />
+            }/>
+
+            <Route path='pizzabros' element={
+              <Menu 
+                nameGastro='Pizza Bros'
+                sloganGastro='The best pizza in town'
               />
             }/>
 
