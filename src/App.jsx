@@ -5,7 +5,7 @@ import NotFound from './Pages/NotFound.jsx'
 import Cart from './Components/Cart.jsx'
 import Checkout from './Components/Checkout.jsx'
 import Contact from './Pages/Contact.jsx'
-
+import Impressum from './Pages/Impressum.jsx'
 
 const App = () => {
   return (
@@ -54,6 +54,7 @@ const App = () => {
 
             <Route path='contact' element={<Contact />} />
 
+            <Route path='impressum' element={<Impressum />} />
 
             <Route path='*' element={<NotFound />} />
             

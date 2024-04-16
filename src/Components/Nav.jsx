@@ -46,7 +46,7 @@ const Nav = () => {
             <Link to='/'>
             <span className='text-2xl font-bold'>Lieferka</span>&nbsp;
             </Link>
-            <span className='text-xs text-teal-400'>beta v1.12</span>
+            <span className='text-xs text-teal-400'>beta v1.15</span>
           </div>
 
           <div className='lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden'>
